@@ -1,0 +1,113 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+
+  .header{
+    text-align: center;
+    padding:20px 0;
+    h5{
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    p{
+    font-style: italic;
+    }
+    .title{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size:4rem;
+      letter-spacing: 2px;
+      img{
+        width: 45px;
+        object-fit: 1;
+      }
+    }
+    
+  }
+  
+  .information{
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    justify-content: center;
+    
+    .body {
+      margin: 20px 0px;
+      background-color: cornflowerblue;
+      height: 320px;
+      width: 200px;
+      border-bottom: 10px solid ;
+      border-radius: 8px;
+      padding: 50px 10px;
+    
+      h4{
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      .count{
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+      .date{
+        font-weight: bold;
+        div{
+          color: gray;
+        }
+      }
+      .bottom {
+        font-weight: bold;
+      }
+    }
+    .infected{
+      background-color:#B1D7FE ;
+      border-color: cornflowerblue;
+    }
+    .recovered{
+      background-color: #DDF6E2;
+      border-color: darkgreen;
+    }
+    .deaths{
+      background-color: #F4D7D7;
+      border-color:#FA7077 ;
+    }
+    .active{
+     background-color: #F4E1CA;
+     border-color: #F2E678;
+    }
+  }
+
+  .form{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+    .select{
+      border: none;
+      border-bottom: 1px solid #333;
+      width: 250px;
+      cursor: pointer;
+      outline: none;
+      user-select: none;
+      font-weight: bold;
+    }
+  }
+
+  .grafic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
